@@ -1,0 +1,7 @@
+# Docker build the image
+docker build -t simple-webapp-flask .
+
+# Start the python webapp
+docker run --name flask-app -d -p 5000:5000 simple-webapp-flask
+
+http://localhost:5000/
